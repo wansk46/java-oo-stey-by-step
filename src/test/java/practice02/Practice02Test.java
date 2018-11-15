@@ -1,13 +1,13 @@
-//package practice02;
+package practice02;
 //
-//import org.junit.Test;
+import org.junit.Test;
 //
-//import static org.fest.assertions.api.Assertions.assertThat;
+import static org.fest.assertions.api.Assertions.assertThat;
 //
-//public class Practice02Test {
+public class Practice02Test {
 //    @Test
-//    public void should_person_have_name_and_age() throws Exception {
-//        Person person = new Person("Tom", 21);
+//   public void should_person_have_name_and_age() throws Exception {
+//        Person person = new Person(21);
 //        assertThat(person.getName()).isEqualTo("Tom");
 //        assertThat(person.getAge()).isEqualTo(21);
 //    }
@@ -19,17 +19,17 @@
 //        assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
 //    }
 //
-//    @Test
-//    public void should_student_have_name_age_and_class_number() throws Exception {
-//        Student tom = new Student("Tom", 21, 2);
-//        assertThat(tom.getName()).isEqualTo("Tom");
-//        assertThat(tom.getAge()).isEqualTo(21);
-//        assertThat(tom.getKlass()).isEqualTo(2);
-//    }
+    @Test
+    public void should_student_have_name_age_and_class_number() throws Exception {
+        Student tom = new Student("Tom", 21, 2);
+        assertThat(tom.getName()).isEqualTo("Tom");
+        assertThat(tom.getAge()).isEqualTo(21);
+        assertThat(tom.getklass()).isEqualTo(2);
+    }
 //
-//    @Test
-//    public void should_student_introduce_with_class() throws Exception {
-//        Student tom = new Student("Tom", 21, 2);
-//        assertThat(tom.introduce()).isEqualTo("I am a Student. I am at Class 2.");
-//    }
-//}
+    @Test
+   public void should_student_introduce_with_class() throws Exception {
+       Student tom = new Student("Tom", 21, 2);
+        assertThat(tom.introduce()).isEqualTo("I am a Student. I am at Class 2.");
+    }
+}
